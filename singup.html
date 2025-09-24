@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>HOMEPAGE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+          <header >
+            <table style=" width:100%;text-align:center;height:20px;  padding: 20px;">
+                <tr>
+                    <td ><a href="home.html" target="_blank">home</a></td>
+                    <td><a href="AboutMe.html" target="_blank">About Me</a></td>
+                    <td><a href="login.html" target="_blank">Login/Signup</a></td>
+                    <td><a href="feed.html" target="_blank">Feedback</a></td>
+
+                </tr>
+            </table>
+        </header>
+      <form style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 400px; margin: auto;">
+
+            <h2>Sign Up</h2>
+
+            <label for="username" style="color:#001f3f;font-weight:bold; font-size: 20px;">Full Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" required>
+
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm" required>
+
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"  pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+                   
+            <label>Gender:</label>
+            <div >
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div><br>
+
+
+            <label for="dob" >Date of Birth:</label>
+            <input type="date" id="dob" name="dob" >
+            
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" 
+                    style="padding: 10px; border-radius: 10px; font-size: 16px; width: 350px;">
+                <option value="">Select Country</option>
+                <option>India</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+
+            <label for="state" >State:</label>
+            <input type="text" id="state" name="state" >
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" 
+                    style="padding: 10px; border-radius: 10px; font-size: 16px; width: 350px; height: 80px;"></textarea>
+
+            <div style="font-size: 12px;">
+                <label><input type="checkbox" required> I agree to the Terms & Conditions</label>
+            </div>
+
+
+            <div style="display: flex; gap: 10px; margin-top: 10px;">
+                <button type="submit" id="ss">
+                    Submit
+                </button>
+                <button type="reset" 
+                        style="padding: 10px 20px; font-size: 18px; border-radius: 8px; background-color: #7e3400; color: white; border: none; cursor: pointer;">
+                    Reset
+                </button>
+            </div>
+
+
+        </form>
+
+            <footer>
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Phone:+916354***</li>
+                <li>Email: <a href="23bcp080@sot.pdpu.ac.in">23bcp080@sot.pdpu.ac.in</a></li>
+                <li>LinkedIn: <a href="linkedin.com/in/ZANKARbhalala" target="_blank">linkedin.com/in/aeshamarakana</a></li>
+              </ul>
+          </footer>
+          
+    </body>
+</html>

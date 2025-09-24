@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <table style=" width:100%;text-align:center;height:20px;  padding: 20px;">
+            <tr>
+                <td ><a href="home.html" target="_blank">home</a></td>
+                <td><a href="AboutMe.html" target="_blank">About Me</a></td>
+                <td><a href="login.html" target="_blank">Login/Signup</a></td>
+                <td><a href="feed.html" target="_blank">Feedback</a></td>
+
+            </tr>
+        </table>
+    </header>
+    <br>
+
+    <form style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 400px; margin: auto;">
+        <h2 style="color:#001f3f;">Feedback Form</h2>
+
+       
+        <label for="name" style="color:#001f3f;font-weight:bold; font-size: 18px;">Full Name:</label>
+        <input type="text" id="name" name="name" 
+               style="padding: 10px; border-radius: 10px; font-size: 16px; width: 350px;" required>
+
+    
+        <label for="email" style="color:#001f3f;font-weight:bold; font-size: 18px;">Email:</label>
+        <input type="email" id="email" name="email" 
+               style="padding: 10px; border-radius: 10px; font-size: 16px; width: 350px;" required>
+
+       
+        <label style="color:#001f3f;font-weight:bold; font-size: 18px;">Rating:</label>
+        <div style="font-size: 18px;">
+            <label><input id="ra" type="radio" name="rating" value="1"> 1</label>
+            <label><input id="ra" type="radio" name="rating" value="2"> 2</label>
+            <label><input id="ra" type="radio" name="rating" value="3"> 3</label>
+            <label><input id="ra" type="radio" name="rating" value="4"> 4</label>
+            <label><input id="ra" type="radio" name="rating" value="5"> 5</label>
+        </div>
+
+        
+        <label for="experience" style="color:#001f3f;font-weight:bold; font-size: 18px;">How was your experience?</label>
+        <select id="experience" name="experience" 
+                style="padding: 10px; border-radius: 10px; font-size: 16px; width: 350px;">
+            <option value="">Select</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        
+        <label for="comments" style="color:#001f3f;font-weight:bold; font-size: 18px;">Comments:</label>
+        <textarea id="comments" name="comments" 
+                  style="padding: 10px; border-radius: 10px; font-size: 16px; width: 350px; height: 120px;" required></textarea>
+
+        
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <button type="submit" 
+                    style="padding: 10px 20px; font-size: 18px; border-radius: 8px; background-color: #3f2800; color: white; border: none; cursor: pointer;">
+                Submit
+            </button>
+            <button type="reset" 
+                    style="padding: 10px 20px; font-size: 18px; border-radius: 8px; background-color: #6b4817; color: white; border: none; cursor: pointer;">
+                Reset
+            </button>
+        </div>
+    </form>
+</body>
+<footer>
+    <h2>Contact Me</h2>
+    <ul>
+        <li>Phone:+916354***</li>
+        <li>Email: <a href="23bcp080@sot.pdpu.ac.in">23bcp080@sot.pdpu.ac.in</a></li>
+        <li>LinkedIn: <a href="linkedin.com/in/ZANKARbhalala" target="_blank">linkedin.com/in/aeshamarakana</a></li>
+      </ul>
+  </footer>
+</html>

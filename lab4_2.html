@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interest Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header >
+    <table style=" width:100%;text-align:center;height:20px;  padding: 20px;">
+        <tr>
+            <td ><a href="home.html" target="_blank">home</a></td>
+            <td><a href="AboutMe.html" target="_blank">About Me</a></td>
+            <td><a href="login.html" target="_blank">Login/Signup</a></td>
+            <td><a href="feed.html" target="_blank">Feedback</a></td>
+
+        </tr>
+    </table>
+</header>
+  <form class="styled-form">
+    <label for="amount">Select amount:</label>
+    <input type="range" id="amount" value="1000" min="1000" max="500000"
+    oninput="calculateInterest()">
+    <span id="amountValue"></span>
+    <label for="rate">Enter Interest Rate (%):</label>
+    <input type="range" id="rate" value="1" min="1" max="100"
+    oninput="calculateInterest()">
+    <span id="rateValue"></span>
+    <label for="time">Enter Time (in years):</label>
+    <input type="range" id="time" value="1" min="1" max="50" oninput="calculateInterest()">
+    <span id="timeValue"></span>
+    <div id="output"></div>
+    <script>
+    function calculateInterest() {
+    const P = parseFloat(document.getElementById("amount").value);
+    const R = parseFloat(document.getElementById("rate").value);
+    const T = parseFloat(document.getElementById("time").value);
+    document.getElementById("amountValue").textContent = "₹" + P.toLocaleString();
+    document.getElementById("rateValue").textContent = R + "%";
+    document.getElementById("timeValue").textContent = T + (T > 1 ? " years" : " year");
+    const SI = (P * R * T) / 100;
+    const total = P + SI;
+    document.getElementById("output").innerHTML =
+    "Principal: ₹" + P.toLocaleString() + "<br>" +
+    "Interest: ₹" + SI.toLocaleString() + "<br>" +
+    "Total Amount: ₹" + total.toLocaleString();
+}
+window.onload = calculateInterest;
+</script>
+</form>
+
+</body>
+</html>
